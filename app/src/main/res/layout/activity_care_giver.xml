@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E6F0FA"
+    android:gravity="center_horizontal">
+
+    <!-- Senior ID Label -->
+    <TextView
+        android:id="@+id/seniorId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="16dp"
+        android:text="Senior ID:  "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4A90E2" />
+
+    <!-- Senior List Spinner -->
+    <Spinner
+        android:id="@+id/seniorListSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:padding="14dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Senior Health Details Label -->
+    <TextView
+        android:id="@+id/seniorHealthDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Health Details: "
+        android:textSize="16sp"
+        android:textColor="#4A90E2" />
+
+    <!-- Prescribe Medication Input -->
+    <EditText
+        android:id="@+id/prescribeMedication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Prescribe Medication"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Dose Level Input -->
+    <EditText
+        android:id="@+id/doseLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Dose Level"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Prescribed Time Input -->
+    <EditText
+        android:id="@+id/prescribeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Prescribed Time (HH:MM)"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Send Notification Button -->
+    <Button
+        android:id="@+id/sendNotificationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="Send Notification"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="#4A90E2"
+        android:textColor="#FFFFFF" />
+
+    <!-- View Assigned Seniors Button -->
+    <Button
+        android:id="@+id/viewSeniorsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="View Assigned Seniors"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="#4A90E2"
+        android:textColor="#FFFFFF" />
+
+    <!-- Assigned Seniors ListView -->
+    <ListView
+        android:id="@+id/assignedSeniorsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#90CAF9"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E6F0FA"
+    android:gravity="center_horizontal">
+
+    <!-- User ID Input -->
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:hint="Enter User ID"
+        android:padding="14dp"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Name"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Address Input -->
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Address"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Age Input -->
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="14dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#90CAF9"
+        android:textSize="16sp" />
+
+    <!-- Role Selection -->
+    <RadioGroup
+        android:id="@+id/roleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/seniorCitizen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Senior Citizen"
+            android:textColor="#4A90E2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/careGiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Care Giver"
+            android:textColor="#4A90E2"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="#4A90E2"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
